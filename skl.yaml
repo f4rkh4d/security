@@ -1,0 +1,20 @@
+name: farkhad-security
+version: 0.1.0
+description: hands-on security skills — dependency audit triage, secret scanning, CSP building, auth code review. Concrete findings, not vibes.
+author: f4rkh4d
+homepage: https://github.com/f4rkh4d/security
+targets:
+  - claude-code
+skills:
+  - id: dep-audit
+    path: skills/dep-audit
+    summary: triage npm/cargo/pip audit output by exploitability, not just CVE noise
+  - id: secret-scan
+    path: skills/secret-scan
+    summary: scan for committed secrets with high-confidence patterns first, then heuristics
+  - id: csp-builder
+    path: skills/csp-builder
+    summary: build a working CSP from the actual app surface, with nonce-based inline + report-only rollout
+  - id: auth-review
+    path: skills/auth-review
+    summary: review auth code for concrete vulnerabilities, every finding cited and reproducible
